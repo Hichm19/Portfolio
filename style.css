@@ -617,10 +617,25 @@ ul { list-style: none; }
   .timeline-item { grid-template-columns: 1fr; gap: 0.5rem; }
   .timeline-date { padding-top: 0; }
   .footer { padding: 2rem; }
+  .about-stats {
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.btn-cv {
+  width: 100%;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
 }
 
 @media (max-width: 600px) {
   .hero-name { font-size: 2.8rem; }
-  .about-stats { gap: 1.5rem; }
+  
+  .about-stats {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
   .projects-grid { grid-template-columns: 1fr; }
 }
